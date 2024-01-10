@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Execution Summary</title>
+
+        <link rel="stylesheet" type="text/css" href="../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../HTML_Design_Files/CSS/jquery.jqplot.css" />
+        <link rel="Stylesheet" type="text/css" href="../HTML_Design_Files/CSS/jquery-ui.min.css"  />
+
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jquery.min.js"></script>
+    <script type="text/javascript" src="../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="../HTML_Design_Files/JS/excanvas.js"></script>
+<![endif]-->
+
+
+        <script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.barRenderer.min.js"></script> 
+<script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.pointLabels.min.js"></script>
+
+<script type="text/javascript" src="../HTML_Design_Files/JS/jqplot.highlighter.min.js"></script>
+
+<script type="text/javascript" src="barChart.js"></script>
+<script type="text/javascript" src="lineChart.js"></script>
+<script type="text/javascript" src="../HTML_Design_Files/JS/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#tabs").tabs();
+
+$('#tabs').bind('tabsshow', function(event, ui) {
+ if (ui.index === 1 && plot1._drawCount === 0) {
+plot1.replot();
+                    }
+                    else if (ui.index === 2 && plot2._drawCount === 0) {
+plot2.replot();
+}
+});
+});
+        </script>
+        
+    </head>
+<body>
+ <table id="mainTable">
+<tr id="header" >
+<td id="logo"><img src="../HTML_Design_Files/IMG/TrackDfect.jpg" height="70" width="140" /> <br/></td>
+                <td id="headertext">
+                    Solverminds test Reports 
+<div style="padding-right:20px;float:right"><img src="../HTML_Design_Files/IMG/Solverminds.png" height="70" width="140" /> </i></div>                </td>
+</tr>
+
+
+            <tr id="container">
+                <td id="menu">
+                    <ul > 
+
+ <li class="menuStyle"><a href="../index.html" >Index</a></li>
+
+
+ <li class="menuStyle"><a href="Run_1\CurrentRun.html" >Run 1 </a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">
+
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Line Chart</a></li>
+                            <li><a href="#tabs-2">Bar Chart</a></li>      
+                        </ul>
+                        <div id="tabs-1" style="text-align: left;">
+                            <p class="info" style="text-align: center;color: black;font-size: 14px">
+                                The following Line chart demonstrates the number of Passed, Failed and Skipped Test Cases
+ in last 10 Runs
+                            </p>                            
+                            <div id="line" style="height: 270px;  width: 85%; margin-top: 20px;color:black;"></div>
+
+                        </div>
+                        <div id="tabs-2" style="text-align: left;">
+                            <p class="info" style="text-align: center;color: black;font-size: 14px">
+                                The following Bar chart demonstrates the number of Passed, Failed and Skipped Test Cases
+                                in last 10 Runs
+                            </p>
+                            <div id="bar" style="margin-top:20px; margin-left:20px; width:85%; height:300px;color:black;"></div>
+                        </div>    
+                    </div> 
+                </td>
+            </tr>
+            <tr id="footer">
+<td colspan="2">
+&nbsp;
+TrackDfect Reports&nbsp;
+ Reports by: <a href="http://www.trackdfect.com/">TrackDfect.com</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

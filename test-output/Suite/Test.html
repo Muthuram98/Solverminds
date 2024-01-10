@@ -1,0 +1,354 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 11 00:36:43 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>340 seconds (340291 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='commonMethods.Testcases.Schedule_failure()'><b>Schedule_failure</b><br>Test class: commonMethods.Testcases<br/>
+<a href="#Output-1318424328" onClick='toggleBox("Output-1318424328", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1318424328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1318424328">
+STEP153<br/>
+STEP154<br/>
+STEP155<br/>
+STEP156<br/>
+STEP157<br/>
+STEP158<br/>
+STEP159<br/>
+STEP160<br/>
+STEP161<br/>
+STEP162<br/>
+STEP163<br/>
+STEP164<br/>
+STEP165<br/>
+STEP166<br/>
+STEP167<br/>
+STEP168<br/>
+STEP169<br/>
+STEP170<br/>
+STEP171<br/>
+STEP172<br/>
+STEP173<br/>
+STEP174<br/>
+STEP175<br/>
+STEP176<br/>
+STEP177<br/>
+STEP178<br/>
+STEP179<br/>
+STEP180<br/>
+STEP181<br/>
+STEP182<br/>
+STEP183<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at scripts.Schedule_failure.sonata_fail(Schedule_failure.java:115)
+	at commonMethods.Testcases.Schedule_failure(Testcases.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1318424328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318424328'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at scripts.Schedule_failure.sonata_fail(Schedule_failure.java:115)
+	at commonMethods.Testcases.Schedule_failure(Testcases.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>56</td>
+<td>commonMethods.Testcases@2c306a57</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='commonMethods.Testcases.Sonata3D()'><b>Sonata3D</b><br>Test class: commonMethods.Testcases<br/>
+<a href="#Output-1916224178" onClick='toggleBox("Output-1916224178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1916224178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1916224178">
+STEP85<br/>
+STEP86<br/>
+STEP87<br/>
+STEP88<br/>
+STEP89<br/>
+STEP90<br/>
+STEP91<br/>
+STEP92<br/>
+STEP93<br/>
+STEP94<br/>
+STEP95<br/>
+STEP96<br/>
+STEP97<br/>
+STEP98<br/>
+STEP99<br/>
+STEP100<br/>
+STEP101<br/>
+STEP102<br/>
+STEP103<br/>
+STEP104<br/>
+STEP105<br/>
+STEP106<br/>
+STEP107<br/>
+STEP108<br/>
+STEP109<br/>
+STEP110<br/>
+STEP111<br/>
+STEP112<br/>
+STEP113<br/>
+STEP114<br/>
+STEP115<br/>
+STEP116<br/>
+STEP117<br/>
+STEP118<br/>
+STEP119<br/>
+STEP120<br/>
+STEP121<br/>
+STEP122<br/>
+STEP123<br/>
+STEP124<br/>
+STEP125<br/>
+STEP126<br/>
+STEP127<br/>
+STEP128<br/>
+STEP129<br/>
+STEP130<br/>
+STEP131<br/>
+STEP132<br/>
+STEP133<br/>
+STEP134<br/>
+STEP135<br/>
+STEP136<br/>
+STEP137<br/>
+STEP138<br/>
+STEP139<br/>
+STEP140<br/>
+STEP141<br/>
+STEP142<br/>
+STEP143<br/>
+STEP144<br/>
+STEP145<br/>
+STEP146<br/>
+STEP147<br/>
+STEP148<br/>
+STEP149<br/>
+STEP150<br/>
+STEP151<br/>
+STEP152<br/>
+</div>
+</td>
+<td></td>
+<td>134</td>
+<td>commonMethods.Testcases@2c306a57</td></tr>
+<tr>
+<td title='commonMethods.Testcases.shipping()'><b>shipping</b><br>Test class: commonMethods.Testcases<br/>
+<a href="#Output-2088661957" onClick='toggleBox("Output-2088661957", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2088661957" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2088661957">
+STEP39<br/>
+STEP40<br/>
+STEP41<br/>
+STEP42<br/>
+STEP43<br/>
+STEP44<br/>
+STEP45<br/>
+STEP46<br/>
+STEP47<br/>
+STEP48<br/>
+STEP49<br/>
+STEP50<br/>
+STEP51<br/>
+STEP52<br/>
+STEP53<br/>
+STEP54<br/>
+STEP55<br/>
+STEP56<br/>
+STEP57<br/>
+STEP58<br/>
+STEP59<br/>
+STEP60<br/>
+STEP61<br/>
+STEP62<br/>
+STEP63<br/>
+STEP64<br/>
+STEP65<br/>
+STEP66<br/>
+STEP67<br/>
+STEP68<br/>
+STEP69<br/>
+STEP70<br/>
+STEP71<br/>
+STEP72<br/>
+STEP73<br/>
+STEP74<br/>
+STEP75<br/>
+STEP76<br/>
+STEP77<br/>
+STEP78<br/>
+STEP79<br/>
+STEP80<br/>
+STEP81<br/>
+STEP82<br/>
+STEP83<br/>
+STEP84<br/>
+</div>
+</td>
+<td></td>
+<td>73</td>
+<td>commonMethods.Testcases@2c306a57</td></tr>
+<tr>
+<td title='commonMethods.Testcases.Solvecrane()'><b>Solvecrane</b><br>Test class: commonMethods.Testcases<br/>
+<a href="#Output-1411054469" onClick='toggleBox("Output-1411054469", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1411054469" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1411054469">
+STEP1<br/>
+STEP2<br/>
+STEP3<br/>
+STEP4<br/>
+STEP5<br/>
+STEP6<br/>
+STEP7<br/>
+STEP8<br/>
+STEP9<br/>
+STEP10<br/>
+STEP11<br/>
+STEP12<br/>
+STEP13<br/>
+STEP14<br/>
+STEP15<br/>
+STEP16<br/>
+STEP17<br/>
+STEP18<br/>
+STEP19<br/>
+STEP20<br/>
+STEP21<br/>
+STEP22<br/>
+STEP23<br/>
+STEP24<br/>
+STEP25<br/>
+STEP26<br/>
+STEP27<br/>
+STEP28<br/>
+STEP29<br/>
+STEP30<br/>
+STEP31<br/>
+STEP32<br/>
+STEP33<br/>
+STEP34<br/>
+STEP35<br/>
+STEP36<br/>
+STEP37<br/>
+STEP38<br/>
+</div>
+</td>
+<td></td>
+<td>68</td>
+<td>commonMethods.Testcases@2c306a57</td></tr>
+</table><p>
+</body>
+</html>

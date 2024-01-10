@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Current Run Reports</title>
+
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script type="text/javascript" src="pieChart.js"></script>
+
+<script language="javascript" type="text/javascript">$(document).ready(function() { $(".video").hide();$("#showmenu").show(); $('#showmenu').click(function(){ $('.video').toggle("slide"); }); });</script><style>#showmenu{text-align:center; padding-top:350px;color: #585858; font-size: 14px;}#video{height: 550px;    margin-top: 5px;    width: 97%;    border-style: solid;    border-width: 1px;    border-color: #21ABCD;        -moz-box-shadow: 0 0 10px #CCCCCC;    -ms-box-shadow: 0 0 10px #CCCCCC;    -webkit-box-shadow: 0 0 10px #CCCCCC;    box-shadow: 0 0 10px #CCCCCC;    zoom: 1;    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=0),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=90),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=180),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=270);    background-color: white;}</style><script language="javascript" type="text/javascript">
+$(document).ready(function() {
+	$('#tcFilter').on('change',function(){
+    if($(this).val()=='pass'){
+        $('.pass').show();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	if($(this).val()=='fail'){
+        $('.pass').hide();
+		$('.fail').show();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	
+	if($(this).val()=='skip'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').show();
+		$('.config').hide();
+    }
+	
+if($(this).val()=='tests'){ $('.pass').show(); $('.fail').show(); $('.skip').show(); $('.config').hide(); }	if($(this).val()=='config'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').show();
+    }
+	
+	if($(this).val()=='all'){
+        $('.pass').show();
+		$('.fail').show();
+		$('.skip').show();
+		$('.config').show();
+    }
+  });
+});       
+</script>
+    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../HTML_Design_Files/IMG/TrackDfect.jpg" alt="Logo" height="70" width="140" /> <br/></td>
+                <td id="headertext">
+                    Solverminds test Reports<div style="padding-right:20px;float:right"><img src="../../HTML_Design_Files/IMG/Solverminds.png" height="70" width="140" /> </i></div></td>
+
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul reversed> 
+
+ <li class="menuStyle"><a href="../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">
+                    <div class="info">
+        Time Taken for Executing below Test Cases: <b>344 Sec</b> <br/>
+                        Current Run Number: <b>Run 1</b>
+<br/>                        <div class="chartStyle summary" style="width: 32%;background-color: #3B9C9C;">
+                            <b>Summary</b><br/><br/>
+                            <table>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>11-Jan-2024 12:42:23</td>
+                            </tr>
+                            <tr>
+                                <td>Total Test Cases</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Passed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>3</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Failed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td>Skipped</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>0</td>
+                            </tr>
+
+ </table> 
+                        </div>                        <div class="chartStyle" style="text-align: left;margin-left: 30px;float: left;width: 60%;">                        
+                            <div id="chart" style="height:300px;color:black;"></div>
+                        </div>
+                    </div>
+                    <div>
+
+<div style="float:left;  color: #585858; font-size: 14px;">	<select id="tcFilter" class="filter">
+						<option  class="filterOption" value="pass">Passed Test Cases</option>
+						<option class="filterOption" value="fail">Failed Test Cases</option>
+						<option class="filterOption" value="skip">Skipped Test Cases</option>
+					</select>	Filter The Methods Based on Selection</div>
+                        <table id="tableStyle" class="chartStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>Suite Name</th>
+                                <th>Module Name</th>
+                   <th>No Of Test Case</th>
+                                                               <th>Test Case Name/ ID</th>
+<th>Iteration</th>                                <th>Time</th>
+                                <th style="width: 7%">Status</th>
+                            </tr>
+
+                            <tr class="all pass">
+                                <td><a href="Suite\Test\commonMethods\Testcases\Solvecrane_Iteration1\Solvecrane.html">Demo1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Solvecrane_Iteration1\Solvecrane.html">Scenario1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Solvecrane_Iteration1\Solvecrane.html">01</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Solvecrane_Iteration1\Solvecrane.html">Solvecrane</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Solvecrane_Iteration1\Solvecrane.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Solvecrane_Iteration1\Solvecrane.html">68 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Suite\Test\commonMethods\Testcases\shipping_Iteration1\shipping.html">Demo2</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\shipping_Iteration1\shipping.html">Scenario2</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\shipping_Iteration1\shipping.html">02</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\shipping_Iteration1\shipping.html">shipping</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\shipping_Iteration1\shipping.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\shipping_Iteration1\shipping.html">73 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Suite\Test\commonMethods\Testcases\Sonata3D_Iteration1\Sonata3D.html">Demo3</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Sonata3D_Iteration1\Sonata3D.html">Scenario3</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Sonata3D_Iteration1\Sonata3D.html">03</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Sonata3D_Iteration1\Sonata3D.html">Sonata3D</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Sonata3D_Iteration1\Sonata3D.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Sonata3D_Iteration1\Sonata3D.html">134 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Suite\Test\commonMethods\Testcases\Schedule_failure_Iteration1\Schedule_failure.html">Demo4</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Schedule_failure_Iteration1\Schedule_failure.html">Scenario4</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Schedule_failure_Iteration1\Schedule_failure.html">04</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Schedule_failure_Iteration1\Schedule_failure.html">Schedule_failure</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Schedule_failure_Iteration1\Schedule_failure.html">1</a></td>
+                                <td><a href="Suite\Test\commonMethods\Testcases\Schedule_failure_Iteration1\Schedule_failure.html">56 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>            <tr id="footer">
+<td colspan="2">
+&nbsp;
+TrackDfect Reports&nbsp;
+ Reports by: <a href="http://www.trackdfect.com/">TrackDfect.com</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

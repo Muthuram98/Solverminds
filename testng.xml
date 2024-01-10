@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite configfailurepolicy="continue" name="Suite" parallel="none">
+	<test name="Test" preserve-order="true">
+		<classes>
+			<class name="commonMethods.Testcases" />
+		</classes>
+		<methods>
+			<include name="Solvecrane" priority="1" />
+			<include name="shipping" priority="2" />
+			<include name="Sonata3D" priority="3" />
+			<include name="Schedule_failure" priority="4" />
+		</methods>
+	</test>
+	<listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener" />
+		<listener
+			class-name="atu.testng.reports.listeners.ConfigurationListener" />
+		<listener class-name="atu.testng.reports.listeners.MethodListener" />
+	</listeners>
+</suite>

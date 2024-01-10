@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pie Charts</title>
+
+        <link rel="stylesheet" type="text/css" href="../../../../../../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../../../../../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript">$(document).ready(function() { $(".exception").hide(); $("#showmenu").show(); $('#showmenu').click(function() { $('.exception').toggle("slide"); }); });        </script>    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../../../../../../HTML_Design_Files/IMG/TrackDfect.jpg" alt="Logo" height="80" width="140" /> <br/></td>
+                <td id="headertext">
+           Solverminds test Reports         
+<div style="padding-right:20px;float:right"><img src="../../../../../../../HTML_Design_Files/IMG/Solverminds.png" height="70" width="140" /> </i></div>                </td>
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../../../../../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../../../../../../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">   
+                    <div class="info">
+       TestCase Name: <b>Sonata3D  :  Iteration 1</b><br/>                        Time Taken for Executing: <b>134 Sec</b> <br/>
+                        Current Run Number: <b>Run 1</b></br>
+                    </div>
+<div class="chartStyle summary" style="background-color:#dbae0f;width: 30%; height: 200px;">          
+                        <b>Execution Platform Details</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>O.S</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Windows 10, amd64Bit, v10.0</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>17.0.8.1</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hostname</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>DESKTOP-ILKE28B</td>
+                            </tr>
+
+                            <tr>
+                                <td>Appium</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>3.10.0</td>
+                            </tr>
+                        </table>  
+                    </div>
+                   
+ <div class="chartStyle summary" style="background-color:#03b78a; margin-left: 40px; height: 200px;width: 30%; ">
+                        <b>Summary</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>Status</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Passed</td>
+                            </tr>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>11-Jan-2024 12:42:24</td>
+                            </tr>
+                            
+
+                            <tr>
+                                <td>Browser</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Chrome</td>
+                            </tr>
+                        </table> 
+                    </div>
+   <div>
+                        <table class="chartStyle" id="tableStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Step Description</th>
+                                <th>Input Value</th>
+                    <th>Actual Value</th>
+                   <th>Time</th>
+                                <th>Line No</th>
+                                <th>Status</th>
+                                <th>Screen shot</th>
+                            </tr>
+                           
+
+<tr><td>1</td>
+<td> Navigate to https://sonata.solverminds.net/</td>
+<td></td>
+<td></td>
+<td>11 Sec</td>
+<td>1522</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/1.PNG"><img alt="No Screenshot" src="img/1.PNG"/></a></td>
+</tr><tr><td>2</td>
+<td>Wait for the Element user</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/2.PNG"><img alt="No Screenshot" src="img/2.PNG"/></a></td>
+</tr><tr><td>3</td>
+<td>Type on user</td>
+<td>trackdfectuser1</td>
+<td></td>
+<td>846 Milli Sec</td>
+<td>581</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/3.PNG"><img alt="No Screenshot" src="img/3.PNG"/></a></td>
+</tr><tr><td>4</td>
+<td>Wait for the Element pass</td>
+<td></td>
+<td></td>
+<td>592 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/4.PNG"><img alt="No Screenshot" src="img/4.PNG"/></a></td>
+</tr><tr><td>5</td>
+<td>Type on pass</td>
+<td>trackDfect@2h7s4</td>
+<td></td>
+<td>944 Milli Sec</td>
+<td>581</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/5.PNG"><img alt="No Screenshot" src="img/5.PNG"/></a></td>
+</tr><tr><td>6</td>
+<td>Wait for the Element login</td>
+<td></td>
+<td></td>
+<td>585 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/6.PNG"><img alt="No Screenshot" src="img/6.PNG"/></a></td>
+</tr><tr><td>7</td>
+<td>Click on login</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/7.PNG"><img alt="No Screenshot" src="img/7.PNG"/></a></td>
+</tr><tr><td>8</td>
+<td>Wait for the Element vessel</td>
+<td></td>
+<td></td>
+<td>874 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/8.PNG"><img alt="No Screenshot" src="img/8.PNG"/></a></td>
+</tr><tr><td>9</td>
+<td>Click on vessel</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/9.PNG"><img alt="No Screenshot" src="img/9.PNG"/></a></td>
+</tr><tr><td>10</td>
+<td>Wait for the Element clickvessel2</td>
+<td></td>
+<td></td>
+<td>293 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/10.PNG"><img alt="No Screenshot" src="img/10.PNG"/></a></td>
+</tr><tr><td>11</td>
+<td>Click on clickvessel2</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/11.PNG"><img alt="No Screenshot" src="img/11.PNG"/></a></td>
+</tr><tr><td>12</td>
+<td>Wait for the Element Full Canvas</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/12.PNG"><img alt="No Screenshot" src="img/12.PNG"/></a></td>
+</tr><tr><td>13</td>
+<td>Wait for the Element ThreeD view</td>
+<td></td>
+<td></td>
+<td>883 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/13.PNG"><img alt="No Screenshot" src="img/13.PNG"/></a></td>
+</tr><tr><td>14</td>
+<td>Click on ThreeD view</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/14.PNG"><img alt="No Screenshot" src="img/14.PNG"/></a></td>
+</tr><tr><td>15</td>
+<td>Wait for the Element Port</td>
+<td></td>
+<td></td>
+<td>14 Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/15.PNG"><img alt="No Screenshot" src="img/15.PNG"/></a></td>
+</tr><tr><td>16</td>
+<td>Captured the screenshot </td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>2353</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/16.PNG"><img alt="No Screenshot" src="img/16.PNG"/></a></td>
+</tr><tr><td>17</td>
+<td>Userflow_02 - 01 - Image compared sucessfully</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>2402</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/17.PNG"><img alt="No Screenshot" src="img/17.PNG"/></a></td>
+</tr><tr><td>18</td>
+<td>Wait for the Element Switch to 2D and 3D</td>
+<td></td>
+<td></td>
+<td>4 Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/18.PNG"><img alt="No Screenshot" src="img/18.PNG"/></a></td>
+</tr><tr><td>19</td>
+<td>Click on Switch to 2D and 3D</td>
+<td></td>
+<td></td>
+<td>18 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/19.PNG"><img alt="No Screenshot" src="img/19.PNG"/></a></td>
+</tr><tr><td>20</td>
+<td>Wait for the Element Bay Select</td>
+<td></td>
+<td></td>
+<td>428 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/20.PNG"><img alt="No Screenshot" src="img/20.PNG"/></a></td>
+</tr><tr><td>21</td>
+<td>Click on Bay Select</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/21.PNG"><img alt="No Screenshot" src="img/21.PNG"/></a></td>
+</tr><tr><td>22</td>
+<td>Wait for the Element First bay</td>
+<td></td>
+<td></td>
+<td>267 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/22.PNG"><img alt="No Screenshot" src="img/22.PNG"/></a></td>
+</tr><tr><td>23</td>
+<td>Click on First bay</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/23.PNG"><img alt="No Screenshot" src="img/23.PNG"/></a></td>
+</tr><tr><td>24</td>
+<td>Both are matches.</td>
+<td>Actual_0 : 010082</td>
+<td></td>
+<td>636 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/24.PNG"><img alt="No Screenshot" src="img/24.PNG"/></a></td>
+</tr><tr><td>25</td>
+<td>Both are matches.</td>
+<td>Actual_1 : 010084</td>
+<td></td>
+<td>639 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/25.PNG"><img alt="No Screenshot" src="img/25.PNG"/></a></td>
+</tr><tr><td>26</td>
+<td>Both are matches.</td>
+<td>Actual_2 : 010086</td>
+<td></td>
+<td>687 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/26.PNG"><img alt="No Screenshot" src="img/26.PNG"/></a></td>
+</tr><tr><td>27</td>
+<td>Both are matches.</td>
+<td>Actual_3 : 010088</td>
+<td></td>
+<td>680 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/27.PNG"><img alt="No Screenshot" src="img/27.PNG"/></a></td>
+</tr><tr><td>28</td>
+<td>Both are matches.</td>
+<td>Actual_4 : 010182</td>
+<td></td>
+<td>633 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/28.PNG"><img alt="No Screenshot" src="img/28.PNG"/></a></td>
+</tr><tr><td>29</td>
+<td>Both are matches.</td>
+<td>Actual_5 : 010184</td>
+<td></td>
+<td>666 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/29.PNG"><img alt="No Screenshot" src="img/29.PNG"/></a></td>
+</tr><tr><td>30</td>
+<td>Both are matches.</td>
+<td>Actual_6 : 010186</td>
+<td></td>
+<td>613 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/30.PNG"><img alt="No Screenshot" src="img/30.PNG"/></a></td>
+</tr><tr><td>31</td>
+<td>Both are matches.</td>
+<td>Actual_7 : 010188</td>
+<td></td>
+<td>697 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/31.PNG"><img alt="No Screenshot" src="img/31.PNG"/></a></td>
+</tr><tr><td>32</td>
+<td>Both are matches.</td>
+<td>Actual_8 : 010282</td>
+<td></td>
+<td>617 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/32.PNG"><img alt="No Screenshot" src="img/32.PNG"/></a></td>
+</tr><tr><td>33</td>
+<td>Both are matches.</td>
+<td>Actual_9 : 010284</td>
+<td></td>
+<td>642 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/33.PNG"><img alt="No Screenshot" src="img/33.PNG"/></a></td>
+</tr><tr><td>34</td>
+<td>Both are matches.</td>
+<td>Actual_10 : 010286</td>
+<td></td>
+<td>786 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/34.PNG"><img alt="No Screenshot" src="img/34.PNG"/></a></td>
+</tr><tr><td>35</td>
+<td>Both are matches.</td>
+<td>Actual_11 : 010288</td>
+<td></td>
+<td>680 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/35.PNG"><img alt="No Screenshot" src="img/35.PNG"/></a></td>
+</tr><tr><td>36</td>
+<td>Both are matches.</td>
+<td>Actual_12 : 010382</td>
+<td></td>
+<td>592 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/36.PNG"><img alt="No Screenshot" src="img/36.PNG"/></a></td>
+</tr><tr><td>37</td>
+<td>Both are matches.</td>
+<td>Actual_13 : 010384</td>
+<td></td>
+<td>757 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/37.PNG"><img alt="No Screenshot" src="img/37.PNG"/></a></td>
+</tr><tr><td>38</td>
+<td>Both are matches.</td>
+<td>Actual_14 : 010386</td>
+<td></td>
+<td>703 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/38.PNG"><img alt="No Screenshot" src="img/38.PNG"/></a></td>
+</tr><tr><td>39</td>
+<td>Both are matches.</td>
+<td>Actual_15 : 010388</td>
+<td></td>
+<td>805 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/39.PNG"><img alt="No Screenshot" src="img/39.PNG"/></a></td>
+</tr><tr><td>40</td>
+<td>Both are matches.</td>
+<td>Actual_16 : 010482</td>
+<td></td>
+<td>820 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/40.PNG"><img alt="No Screenshot" src="img/40.PNG"/></a></td>
+</tr><tr><td>41</td>
+<td>Both are matches.</td>
+<td>Actual_17 : 010484</td>
+<td></td>
+<td>761 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/41.PNG"><img alt="No Screenshot" src="img/41.PNG"/></a></td>
+</tr><tr><td>42</td>
+<td>Both are matches.</td>
+<td>Actual_18 : 010486</td>
+<td></td>
+<td>639 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/42.PNG"><img alt="No Screenshot" src="img/42.PNG"/></a></td>
+</tr><tr><td>43</td>
+<td>Both are matches.</td>
+<td>Actual_19 : 010488</td>
+<td></td>
+<td>692 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/43.PNG"><img alt="No Screenshot" src="img/43.PNG"/></a></td>
+</tr><tr><td>44</td>
+<td>Both are matches.</td>
+<td>Actual_20 : 010582</td>
+<td></td>
+<td>643 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/44.PNG"><img alt="No Screenshot" src="img/44.PNG"/></a></td>
+</tr><tr><td>45</td>
+<td>Both are matches.</td>
+<td>Actual_21 : 010584</td>
+<td></td>
+<td>674 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/45.PNG"><img alt="No Screenshot" src="img/45.PNG"/></a></td>
+</tr><tr><td>46</td>
+<td>Both are matches.</td>
+<td>Actual_22 : 010586</td>
+<td></td>
+<td>671 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/46.PNG"><img alt="No Screenshot" src="img/46.PNG"/></a></td>
+</tr><tr><td>47</td>
+<td>Both are matches.</td>
+<td>Actual_23 : 010588</td>
+<td></td>
+<td>631 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/47.PNG"><img alt="No Screenshot" src="img/47.PNG"/></a></td>
+</tr><tr><td>48</td>
+<td>Both are matches.</td>
+<td>Actual_24 : 010682</td>
+<td></td>
+<td>681 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/48.PNG"><img alt="No Screenshot" src="img/48.PNG"/></a></td>
+</tr><tr><td>49</td>
+<td>Both are matches.</td>
+<td>Actual_25 : 010684</td>
+<td></td>
+<td>821 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/49.PNG"><img alt="No Screenshot" src="img/49.PNG"/></a></td>
+</tr><tr><td>50</td>
+<td>Both are matches.</td>
+<td>Actual_26 : 010686</td>
+<td></td>
+<td>677 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/50.PNG"><img alt="No Screenshot" src="img/50.PNG"/></a></td>
+</tr><tr><td>51</td>
+<td>Both are matches.</td>
+<td>Actual_27 : 010688</td>
+<td></td>
+<td>664 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/51.PNG"><img alt="No Screenshot" src="img/51.PNG"/></a></td>
+</tr><tr><td>52</td>
+<td>Both are matches.</td>
+<td>Actual_28 : 010008</td>
+<td></td>
+<td>670 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/52.PNG"><img alt="No Screenshot" src="img/52.PNG"/></a></td>
+</tr><tr><td>53</td>
+<td>Both are matches.</td>
+<td>Actual_29 : 010010</td>
+<td></td>
+<td>658 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/53.PNG"><img alt="No Screenshot" src="img/53.PNG"/></a></td>
+</tr><tr><td>54</td>
+<td>Both are matches.</td>
+<td>Actual_30 : 010012</td>
+<td></td>
+<td>806 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/54.PNG"><img alt="No Screenshot" src="img/54.PNG"/></a></td>
+</tr><tr><td>55</td>
+<td>Both are matches.</td>
+<td>Actual_31 : 010014</td>
+<td></td>
+<td>607 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/55.PNG"><img alt="No Screenshot" src="img/55.PNG"/></a></td>
+</tr><tr><td>56</td>
+<td>Both are matches.</td>
+<td>Actual_32 : 010112</td>
+<td></td>
+<td>729 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/56.PNG"><img alt="No Screenshot" src="img/56.PNG"/></a></td>
+</tr><tr><td>57</td>
+<td>Both are matches.</td>
+<td>Actual_33 : 010114</td>
+<td></td>
+<td>704 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/57.PNG"><img alt="No Screenshot" src="img/57.PNG"/></a></td>
+</tr><tr><td>58</td>
+<td>Both are matches.</td>
+<td>Actual_34 : 010212</td>
+<td></td>
+<td>606 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/58.PNG"><img alt="No Screenshot" src="img/58.PNG"/></a></td>
+</tr><tr><td>59</td>
+<td>Both are matches.</td>
+<td>Actual_35 : 010214</td>
+<td></td>
+<td>610 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/59.PNG"><img alt="No Screenshot" src="img/59.PNG"/></a></td>
+</tr><tr><td>60</td>
+<td>Both are matches.</td>
+<td>Actual_36 : 010314</td>
+<td></td>
+<td>703 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/60.PNG"><img alt="No Screenshot" src="img/60.PNG"/></a></td>
+</tr><tr><td>61</td>
+<td>Both are matches.</td>
+<td>Actual_37 : 010414</td>
+<td></td>
+<td>894 Milli Sec</td>
+<td>120</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/61.PNG"><img alt="No Screenshot" src="img/61.PNG"/></a></td>
+</tr><tr><td>62</td>
+<td>Wait for the Element Switch to 2D and 3D</td>
+<td></td>
+<td></td>
+<td>447 Milli Sec</td>
+<td>406</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/62.PNG"><img alt="No Screenshot" src="img/62.PNG"/></a></td>
+</tr><tr><td>63</td>
+<td>Click on Switch to 2D and 3D</td>
+<td></td>
+<td></td>
+<td>11 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/63.PNG"><img alt="No Screenshot" src="img/63.PNG"/></a></td>
+</tr><tr><td>64</td>
+<td>Captured the screenshot </td>
+<td></td>
+<td></td>
+<td>781 Milli Sec</td>
+<td>2353</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/64.PNG"><img alt="No Screenshot" src="img/64.PNG"/></a></td>
+</tr><tr><td>65</td>
+<td>Userflow_02 - 02 - Image compared sucessfully</td>
+<td></td>
+<td></td>
+<td>3 Sec</td>
+<td>2402</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/65.PNG"><img alt="No Screenshot" src="img/65.PNG"/></a></td>
+</tr><tr><td>66</td>
+<td>Click on Bay Front</td>
+<td></td>
+<td></td>
+<td>6 Sec</td>
+<td>445</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/66.PNG"><img alt="No Screenshot" src="img/66.PNG"/></a></td>
+</tr><tr><td>67</td>
+<td>Captured the screenshot </td>
+<td></td>
+<td></td>
+<td>773 Milli Sec</td>
+<td>2353</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/67.PNG"><img alt="No Screenshot" src="img/67.PNG"/></a></td>
+</tr><tr><td>68</td>
+<td>Userflow_02 - 03 - Image compared sucessfully</td>
+<td></td>
+<td></td>
+<td>2 Sec</td>
+<td>2402</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td><a href="img/68.PNG"><img alt="No Screenshot" src="img/68.PNG"/></a></td>
+</tr>
+                        </table>  
+                    </div>
+
+                </td>
+            </tr>            <tr id="footer">
+<td colspan="2">
+&nbsp;
+TrackDfect Reports&nbsp;
+ Reports by: <a href="http://www.trackdfect.com/">TrackDfect.com</a>
+</td>
+</tr>
+</table>
+</body>
+</html>
